@@ -1,0 +1,24 @@
+name: Zip Datapack
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Zip Datapack
+        run: |
+          zip -r "2x Better Intelligence.zip" pack.mcmeta pack.png data/
+
+      - name: Upload Zip Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2x Better Intelligence
+          path: "2x Better Intelligence.zip"

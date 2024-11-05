@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Make the too easy mobs have 2 times the intelligence they have now!",
+    "supported_formats": [
+      26,
+      41,
+      48,
+      57,
+      58
+    ]
+  }
+}
